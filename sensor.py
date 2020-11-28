@@ -19,3 +19,6 @@ GPIO.setup(15, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 if GPIO.input(15) != GPIO.LOW :
     bot = telepot.Bot('TOKEN')
     bot.sendMessage(chat_id, text)
+else :
+    bot = telepot.Bot('TOKEN')
+    bot.sendMessage(chat_id, text1)
